@@ -1,0 +1,45 @@
+/* CSS written by Rachel Russo */
+
+/* GLOBAL STYLES (MOBILE FIRST) */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: gold;
+}
+main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    background-color: blue;
+  }
+
+  main, 
+  footer {
+    grid-column: 1 / -1;
+
+  }
+    main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+ }
+}
+@media screen and (min-width: 800px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: pink;
+  }
+
+nav {
+    grid-column: 2/ -1;
+}
+main {
+    grid-template-columns: repeat(3, minimax(0,1fr));
+    gap: 2rem;
+}
+  }
