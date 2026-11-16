@@ -12,6 +12,12 @@ main {
     grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
 }
+main img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
 
 @media screen and (min-width: 600px) {
   body {
